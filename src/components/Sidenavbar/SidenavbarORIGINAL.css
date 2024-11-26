@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: contents;
+    
+  }
+  
+  .caixa {
+    width: 20vw;
+    height: 65.4vh;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.576);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    
+    
+  }
+  
+  .caixa h1 {
+    padding: 5px 4px 4px 2px;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    color: #23023c;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.576);
+    
+    
+  }
+  
+  .listaNavbar {
+    height: 30vh;
+      
+  }
+  
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+    font-family: cursive;
+    color: #23023c;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.576);
+    margin: 4px 0px 25px 4px;
+    text-decoration: none;
+    font-weight: bold;
+    
+    
+    
+  }
+  
+  a:hover {
+    transform: scale(1.05);
+    background-color: #ffa406; /* Cor ao passar o mouse */
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    transition: background-color 0.3s;
+  
+    background: linear-gradient(135deg, #c0392b, #e74c3c); /* Inverte o gradiente ao passar o mouse */
+    transform: translateY(-3px); /* Move o botão para cima */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+    letter-spacing: 1px; /* Aumenta o espaço entre letras */
+    
+    
+  }
+  

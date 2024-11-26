@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.containerTI {
+  display: flex; /* Altera de contents para flex para melhor controle */
+  justify-content: center; /* Centraliza o conteúdo */
+}
+
+/* Estilos da caixa */
+.caixa1 {
+  width: 20vw;
+  height: 100px; /* Removido o valor fixo para melhor adaptação */
+  background-color: #ffe95b; /* Amarelo mais suave */
+  /* border-radius: 10px; */
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Sombra mais suave */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px; /* Aumenta o espaço em baixo */
+  padding: 6px; /* Adiciona espaçamento interno */
+  /* padding: 10px 0px 10px 0px; */
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Atualizado para Roboto */
+  border-bottom: solid 1px rgba(0, 0, 0, 0.493);
+  border-radius: 10px 10px 0px 0px;
+  /* font-family: cursive; */
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.576);
+  font-size: 0.9rem; /* Tamanho da fonte ajustado para 1.2rem */
+}
+
+
+/* Estrutura do container */
+.container {
+  display: flex; /* Altera de contents para flex para melhor controle */
+  justify-content: center; /* Centraliza o conteúdo */
+}
+
+/* Estilos da caixa */
+.caixa {
+  width: 20vw;
+  height: 255px; /* Removido o valor fixo para melhor adaptação */
+  background-color: #fefae0; /* Amarelo mais suave */
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Sombra mais suave */
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+  flex-direction: column;
+  margin-bottom: 5px; /* Aumenta o espaço em baixo */
+  padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Estilos do título */
+.caixa h1 {
+  font-size: 1.4em; /* Aumenta o tamanho */
+  /* font-style: italic; */
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Atualizado para Roboto */
+  /* font-weight: bold; */
+  color: #23023c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra mais sutil */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Lista de links */
+.listaNavbar {
+  flex-grow: 1; /* Permite que a lista cresça e ocupe o espaço disponível */
+  overflow-y: auto; /* Adiciona rolagem se necessário */
+}
+
+/* Estilos dos links */
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  color: #23023c;
+  font-family: 'Roboto', sans-serif; /* Atualizado para Roboto */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  /* font-weight: bold; */
+  margin: 10px 0; /* Aumenta o espaço vertical entre os links */
+  padding: 6px; /* Aumenta o padding para melhor interação */
+  border-radius: 25px; /* Cantos arredondados */
+  /*background-color: rgba(255, 255, 255, 0.8); /* Fundo levemente branco */
+  transition: background-color 0.3s, transform 0.2s; /* Transições mais suaves */
+  margin: 4px 0px 25px 4px;
+  font-size: 15pt;
+}
+
+/* Efeito de hover para os links */
+.nav-link:hover {
+  background: linear-gradient(135deg, #c0392b, #e74c3c); /* Gradiente ao passar o mouse */
+  color: white; /* Muda a cor do texto */
+  transform: translateY(-3px); /* Move o botão para cima */
+  transform: translateX(-15px);
+  padding-left: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+  letter-spacing: 1px; /* Aumenta o espaço entre letras */
+}
+
+@media (max-width: 768px) {
+  .caixa {
+    width: 90vw; /* Aumenta a largura em telas menores */
+    height: auto; /* Ajusta a altura */
+  }
+
+  .nav-link {
+    font-size: 12pt; /* Reduz o tamanho da fonte em telas menores */
+  }
+}

@@ -1,0 +1,37 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.caixaCarrossel {
+  display: flex;
+  width: auto;
+  font-family: 'Roboto', sans-serif; /* Atualizado para Roboto */
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.576);
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.divTextoCarouselBox {
+  background-color: #fefae0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px;
+}
+
+.divTextoCarouselBox h1 {
+  font-size: 1.4em;
+  line-height: 32px;
+  font-family: 'Roboto', sans-serif; /* Atualizado para Roboto */
+  /* font-family: cursive; */
+  /* text-align: justify; */
+}
+
+/* .negrito {
+  font-weight: bold;
+} */
+

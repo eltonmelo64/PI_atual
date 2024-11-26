@@ -1,0 +1,55 @@
+.App {
+  /* background-color: #F0F0F0; Cinza claro */
+  /*background-color: #E6E6FA; /* Lavanda */
+  /* background-color: #E0F7FA; Azul claro */
+  /*background: linear-gradient(135deg, #f4f4f4 50%, #eaeaea 50%); /* Define um fundo gradiente diagonal */
+  /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.8)); */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(100, 149, 237, 0.7));
+  /* background: linear-gradient(to right, #E6E6FA, #B0C4DE); */
+  /* background: linear-gradient(to right, #E6E6FA, #4682B4); */
+  /* background: linear-gradient(to right, #E6E6FA, #FFB6C1); */
+  /* background: linear-gradient(to right, #E6E6FA, #98FB98); */
+  /* background: linear-gradient(to right, #E6E6FA, #ADD8E6); */
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height:100%;
+}
+
+.headerBox {
+  display: contents;
+}
+
+.sidenavCarousel {
+  display: flex;
+  margin-left: 3px;
+}
+
+.divCarousel {
+  width: 75vw;
+}
+
+.carousel {
+  display: contents;
+}
+.navbarbellow {
+  display: flex;
+  justify-content: center;
+}
+/* 
+.chatTabs {
+  display: flex;
+} */
+
+@media (max-width: 768px) {
+  .divCarousel {
+    width: 90vw; /* Aumenta a largura em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarbellow {
+    flex-direction: column; /* Alinha os itens verticalmente */
+  }
+}

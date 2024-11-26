@@ -1,0 +1,192 @@
+/* Reset básico */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do logo */
+.foralogo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  /* box-shadow: inset 0px 1px 5px #00000059; */
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 5px;
+  transition: transform 0.6s ease-in-out; /* Aumentei o tempo da transição para que o giro seja mais suave */
+}
+
+.home-img:hover {
+  transform: rotate(360deg) scale(1.2); /* Gira a imagem 360 graus e a aumenta em 20% */
+}
+
+.logo-img {
+  width: 200px; /* Defina a largura desejada */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos do cabeçalho */
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f6d93d;
+  color: black;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.432);
+  margin-bottom: 5px;
+}
+
+/* Estilos do título */
+.uhuuu h1 {
+  margin-top: 14%;
+  display: flex;
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif; /* Atualizado para Roboto */
+  font-style: italic;
+  text-align: center;
+  /* font-family: cursive; */
+  color: #23023c;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.576);
+}
+
+
+.gps {
+  font-size: 14px; /* Aumentando o tamanho da fonte para melhorar a legibilidade */
+  margin-left: 10px; /* Dando mais espaço à esquerda */
+  border-radius: 12px; /* Aumentando o raio da borda para um visual mais suave */
+  padding: 8px 8px; /* Ajustando o padding para dar mais espaço interno */
+  background-color: #f4f4f4; /* Cor de fundo suave */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+  width: auto; /* Ajustando o tamanho para que o conteúdo se ajuste corretamente */
+  box-shadow: inset 0px 1px 5px #00000059;
+}
+
+.gps select {
+  font-size: 14px; /* Tamanho de fonte maior no select */
+  padding: 8px 8px; /* Espaço interno do select */
+  border: 1px solid #ddd; /* Borda leve */
+  border-radius: 6px; /* Bordas arredondadas no select */
+  background-color: white; /* Fundo branco para contraste */
+  transition: all 0.3s ease; /* Transição suave para hover */
+  text-align: left; /* Alinhando o texto à esquerda */
+}
+
+.gps select:hover {
+  border-color: #0056b3; /* Cor da borda quando o mouse passa por cima */
+}
+
+.gps select:focus {
+  outline: none; /* Remover o contorno padrão */
+  border-color: #007bff; /* Cor da borda ao focar no select */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra suave quando o select está em foco */
+}
+
+
+
+/* Estilos da lista de formulários */
+.listform {
+  display: flex;
+  flex-direction: row;
+}
+
+.listform ul {
+  list-style: none;
+  display: flex;
+}
+
+/* Estilos da lista do cabeçalho */
+.headerlist {
+  display: flex;
+  margin-left: 0%;
+}
+
+.headerlist a {
+  padding: 10px 13px; /* Consolidado */
+  border-radius: 5px; /* Aplicado aos quatro cantos */
+  font-family: 'Roboto', sans-serif; /* Atualizado para Roboto */
+  font-weight: bold;
+  /* font-family: cursive; */
+  font-size: larger;
+  color: #23023c;
+  text-decoration: none; /* Remove o sublinhado */
+  border-radius: 25px; /* Cantos arredondados */
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.576);
+  transition: background-color 0.3s, color 0.3s; /* Adicionado para o hover */
+  
+}
+
+
+.headerlist a:hover {
+  background: linear-gradient(135deg, #c0392b, #e74c3c); /* Gradiente ao passar o mouse */
+  color: white; /* Muda a cor do texto */
+  transform: translateY(0px); /* Move o botão para cima */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+
+
+/* Estilos do formulário */
+.headerform {
+  padding: 0px 35px;
+  width: 47vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centraliza o conteúdo do formulário */
+  align-items: center; /* Alinha verticalmente o botão */
+  margin-top: 6%;
+  
+}
+
+.inputtext {
+  /* width: 18vw;
+  border: solid 1px rgba(0, 0, 0, 0.823); */
+  min-width: 350px;; /* Aumente a largura para mais espaço */
+  padding: 10px; /* Adicione padding para aumentar a altura */
+  border: solid 0px rgba(0, 0, 0, 0.823);
+  box-shadow: inset 0px 1px 5px #00000059;
+  font-size: 1em; /* Ajuste o tamanho da fonte se necessário */
+  border-radius: 0px; /* Torna os cantos arredondados */
+  transition: border-color 0.3s; /* Transição suave para mudanças de cor */
+  margin-left: 70%;
+}
+
+
+.headerformbutton {
+  padding: 6.5px 20px; /* Aumente o padding para aumentar o tamanho do botão */
+  /* padding: 2px; */
+  color: white;
+  font-weight: bold;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 0px;
+  font-size: 1.2em; /* Aumenta o tamanho da fonte */
+  transition: background-color 0.3s; /* Adiciona uma transição suave */
+  margin-left: 0;
+  cursor: pointer;
+  box-shadow: inset 0px 1px 5px #00000059;
+}
+
+.headerformbutton:hover {
+  background-color: aqua;
+}
+
+/* Estilos da classe .carousel */
+.carousel {
+  display: contents;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Muda a direção do flex em telas menores */
+  }
+}
+
+#config {
+  width: 60px; 
+  height: auto;
+}

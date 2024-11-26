@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: none;
+}
+
+.content.show {
+    display: flex;
+}
+
+#container {
+    height: 39.2vw;
+    margin-left: 5px;
+}
+
+.tab-contents {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 242, 237);
+}
+
+.ranking {
+    display: flex;
+    width: 99.5%;
+    margin: 2px;
+    margin-bottom: 2px;
+    background-color: #fefae0;
+}
+
+.ranking img {
+    width: 26%;
+    height: 180px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.ranking h2 {
+    width: 98%;
+    margin-top: 15px;
+    text-align: left;
+    margin-bottom: 15px;
+    white-space: nowrap; /* Força á não quebrar linhas */
+}
+
+.ranking p {
+    width: 98%;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 10pt;
+}
+
+.ranking span {
+    font-weight: bold;
+}
+
+#future {
+    /*display: flex;*/
+    height: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(100, 149, 237, 0.7));;
+}
+
+#past {
+    height: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(100, 149, 237, 0.7));;
+}
+
+.tab-btn {
+    padding: 3px;
+    padding-top: 7px;
+    width: 15%;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    margin-right: 3px;
+    background-color: #f6d93d;
+    cursor: pointer;
+    font-weight: bold;
+    color:black
+    
+}
+
+.tab-btn.active {
+    background-color: #c0392b; /* Cor de fundo quando ativo */
+    color: white; /* Cor do texto quando ativo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar destaque */
+    transform: translateY(-3px); /* Leve movimento para cima */
+}
+
+.tab-btn:hover {
+    background: linear-gradient(135deg, #c0392b, #e74c3c); /* Gradiente ao passar o mouse */
+    color: white; /* Muda a cor do texto */
+    transform: translateY(0px); /* Move o botão para cima */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+    height: 26px;
+}
+
+
+#add-buttons {
+    margin-left: 50%;
+    margin-bottom: 0;
+    background-color: #d87c12;
+}
+
+.btn-euvou {
+    width: 100px;
+    padding: 1px;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: #f6d93d;
+    font-style: oblique;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: solid 1px black;
+}
+
+.btn-euvou:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+.btn-cancelar {
+    width: 100px;
+    padding: 1px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: #f6d93d;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+.btn-cancelar:hover {
+    background-color: #c0392b;
+    color: white;
+}
+.marked-message {
+    margin-left: 15px;
+    background-color: #c0392b;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+}
+
+#rolesm {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    #container {
+      width: 90vw; /* Aumenta a largura em telas menores */
+      height: auto; /* Ajusta a altura */
+    }
+  
+    .tab-btn {
+      width: 100%; /* Botões ocupam 100% em telas menores */
+      margin-bottom: 5px; /* Espaçamento entre botões */
+    }
+  }

@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.boxChat {
+  width: 20vw;
+  height: auto;
+  background-color: #fefae0;
+
+  border-radius: 10px;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.576);
+}
+
+.dizAi {
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Atualizado para Roboto */
+  border-bottom: solid 1px rgba(0, 0, 0, 0.493);
+  border-radius: 10px 10px 0px 0px;
+  /* font-family: cursive; */
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.576);
+}
+
+.caixaMensagens {
+  overflow-y: scroll;
+  width: 20svw;
+  height: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.perfil {
+  width: 50px;
+  padding: 2px;
+  margin-right: 10px;
+}
+
+.perfil img {
+  width: 50px;
+}
+
+.perfil p {
+  font-size: 0.7em;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+.mensagens {
+  width: 18.9vw;
+  display: flex;
+  padding: 10px 0px 10px 0px;
+  align-items: center;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.493);
+}
+
+.mensagens > p {
+  text-align: justify;
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+.chatFormInputText {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+}
+
+.chatInputText {
+  width: 19.5vw;
+  height: 8vh;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: solid 1px black;
+  resize: vertical;
+  padding: 5px;
+}
